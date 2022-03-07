@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+$light: #f8f9fa;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.6rem !important;
+  background-color: #f8f9fa !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.nav-icon {
+  font-size: 1.6rem;
+}
+
+.category {
+  padding: 1rem 3rem;
+  ul {
+    list-style: none;
+    padding: 0rem;
+
+    li {
+      a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        width: 100%;
+        padding: 1rem 0rem;
+        margin-right: 0;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          background-color: black;
+          color: white;
+          padding: 1rem 1rem;
+        }
+      }
+    }
+  }
+}
+
+.loader {
+  height: 10rem;
+  width: 10rem;
+}
+
+.nav {
+  display: grid !important;
+  align-items: center;
+  grid-template-columns: 1fr 3fr 2fr;
+}
+
+.allbuttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.card-title:hover {
+  color: #ffc107 !important;
+}
+
+.card-img-top {
+  transition: all 0.4s ease-in-out !important;
+
+  &:hover {
+    transform: scale(0.9) !important;
+  }
+}
+
+.form {
+  border-top: 3px solid #ffc107;
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
+    justify-content: start !important;
+  }
+  .allbuttons {
+    justify-content: start;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 50%;
+  }
+  .form {
+    width: 100%;
+  }
+}
+img.d-block.w-100 {
+  height: 75vh;
+  object-fit: cover;
+}
+@import "~bootstrap/scss/bootstrap.scss";
